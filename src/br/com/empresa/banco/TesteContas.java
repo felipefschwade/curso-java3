@@ -19,6 +19,8 @@ public class TesteContas {
 
 		System.out.printf("O saldo é: %.2f", cc.getSaldo());
 		System.out.printf("O saldo é: %.2f", cp.getSaldo());
+		ContaCorrente conta = new ContaCorrente();
+		System.out.println(conta);
 
 	}
 }

@@ -1,4 +1,4 @@
-package br.com.empresa.sistema;
+package br.com.empresa.banco;
 
 public class TestaString {
 	public static void main(String[] args) {

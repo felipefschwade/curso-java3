@@ -20,4 +20,8 @@ public abstract class Conta {
 		this.saldo -= valor;
 	}
 	public abstract void atualiza(double taxa);
+	
+	public String toString() {
+		return "Objeto do tipo conta com saldo: "+this.saldo;
+	}
 }
