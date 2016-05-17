@@ -3,8 +3,8 @@ package br.com.empresa.conta;
 import br.com.empresa.sistema.Tributavel;
 
 public class ContaCorrente extends Conta implements Tributavel{
-	public ContaCorrente(int numero) {
-		super(numero);
+	public ContaCorrente(int numero, String titular) {
+		super(numero, titular);
 	}
 	
 	public void atualiza(double taxa) {

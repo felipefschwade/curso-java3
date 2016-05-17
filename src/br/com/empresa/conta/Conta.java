@@ -3,9 +3,11 @@ package br.com.empresa.conta;
 public abstract class Conta {
 	protected double saldo;
 	protected static int numero;
+	protected String titular;
 	
-	public Conta(int numero) {
+	public Conta(int numero, String titular) {
 		this.numero = numero;
+		this.titular = titular;
 	}
 	
 	public void setSaldo(double saldo) {
@@ -31,6 +33,6 @@ public abstract class Conta {
 	}
 	public boolean equals(Object obj) {
 		Conta outra_conta = (Conta) obj;
-		return this.numero == outra_conta.numero;
+		return this.numero == outra_conta.numero && this.titular == outra_conta.titular;
 	}
 }
