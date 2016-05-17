@@ -2,6 +2,11 @@ package br.com.empresa.conta;
 
 public abstract class Conta {
 	protected double saldo;
+	protected static int numero;
+	
+	public Conta(int numero) {
+		this.numero = numero;
+	}
 	
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;
@@ -23,5 +28,9 @@ public abstract class Conta {
 	
 	public String toString() {
 		return "Objeto do tipo conta com saldo: "+this.saldo;
+	}
+	public boolean equals(Object obj) {
+		Conta outra_conta = (Conta) obj;
+		return this.numero == outra_conta.numero;
 	}
 }
