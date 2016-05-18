@@ -7,9 +7,9 @@ import br.com.empresa.sistema.AtualizadorDeContas;
 
 public class TestaAtualizadorDeContas {
     public static void main(String[] args) {
-        Conta c = new ContaCorrente();
-        Conta cc = new ContaCorrente();
-        Conta cp = new ContaPoupanca();
+        Conta c = new ContaCorrente(0, null);
+        Conta cc = new ContaCorrente(0, null);
+        Conta cp = new ContaPoupanca(0, null);
 
         c.deposita(1000); 
         cc.deposita(1000); 

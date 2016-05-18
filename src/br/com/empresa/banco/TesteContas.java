@@ -5,8 +5,8 @@ import br.com.empresa.conta.ContaPoupanca;
 
 public class TesteContas {
 	public static void main(String[] args) throws Exception {
-		ContaCorrente cc = new ContaCorrente();
-		ContaPoupanca cp = new ContaPoupanca();
+		ContaCorrente cc = new ContaCorrente(0, null);
+		ContaPoupanca cp = new ContaPoupanca(0, null);
 		try {
 			cp.deposita(-1000);
 		} catch (Exception e) {
@@ -19,7 +19,7 @@ public class TesteContas {
 
 		System.out.printf("O saldo é: %.2f", cc.getSaldo());
 		System.out.printf("O saldo é: %.2f", cp.getSaldo());
-		ContaCorrente conta = new ContaCorrente();
+		ContaCorrente conta = new ContaCorrente(0, null);
 		System.out.println(conta);
 
 	}
