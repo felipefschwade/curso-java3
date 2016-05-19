@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 public class TesteIO {
 	public static void main(String[] args) throws IOException {
-		InputStream is = new FileInputStream("arquivo.txt");
+		InputStream is = System.in;//FileInputStream("arquivo.txt");
 		OutputStream os = new FileOutputStream("escrita.txt");
 		PrintStream ps = new PrintStream(os);
 		Scanner sc = new Scanner(is);
