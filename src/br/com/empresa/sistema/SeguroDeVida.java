@@ -1,6 +1,4 @@
-package br.com.empresa.banco;
-
-import br.com.empresa.sistema.Tributavel;
+package br.com.empresa.sistema;
 
 public class SeguroDeVida implements Tributavel{
 
