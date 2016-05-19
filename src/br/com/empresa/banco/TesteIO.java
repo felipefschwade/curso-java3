@@ -9,9 +9,9 @@ import java.io.InputStreamReader;
 
 public class TesteIO {
 	public static void main(String[] args) throws IOException {
-		InputStream is = new FileInputStream("arquivo.txt");
-		InputStreamReader ir = new InputStreamReader(is);
-		BufferedReader br = new BufferedReader(ir); 
+		BufferedReader br = new BufferedReader(
+                new InputStreamReader(
+                    new FileInputStream("arquivo.txt")));
 		String linha = br.readLine();
 		while (linha != null) {
 			System.out.println(linha);
