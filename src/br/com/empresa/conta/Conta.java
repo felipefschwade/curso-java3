@@ -33,7 +33,7 @@ public abstract class Conta {
 	public abstract void atualiza(double taxa);
 	
 	public String toString() {
-		return "Objeto do tipo conta com saldo: "+this.saldo;
+		return "Objeto do tipo conta com saldo: "+this.saldo+" e número: "+this.numero;
 	}
 	public boolean equals(Object obj) {
 		Conta outra_conta = (Conta) obj;
