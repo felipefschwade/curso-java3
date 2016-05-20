@@ -2,7 +2,11 @@ package br.com.empresa.conta;
 
 public abstract class Conta {
 	protected double saldo;
-	protected static int numero;
+	protected int numero;
+	
+	public int getNumero() {
+		return numero;
+	}
 	protected String titular;
 	
 	public Conta(int numero, String titular) {
