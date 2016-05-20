@@ -1,6 +1,6 @@
 package br.com.empresa.conta;
 
-public class ContaPoupanca extends Conta {
+public class ContaPoupanca extends Conta implements Comparable<ContaPoupanca> {
 	public ContaPoupanca(int numero, String titular) {
 		super(numero, titular);
 		// TODO Auto-generated constructor stub
@@ -16,5 +16,10 @@ public class ContaPoupanca extends Conta {
         } else {
             this.saldo += valor  - 0.10;        
         }        
+	}
+
+	@Override
+	public int compareTo(ContaPoupanca c) {
+		return this.getNumero() - c.getNumero();
 	}
 }
