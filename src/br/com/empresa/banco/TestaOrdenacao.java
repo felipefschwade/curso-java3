@@ -16,7 +16,7 @@ public class TestaOrdenacao {
 		ContaPoupanca c2 = new ContaPoupanca(132, "Pedro");
 		for (int i = 0; i < 10; i++) {
 			Random random = new Random();
-			ContaPoupanca c = new ContaPoupanca(random.nextInt(100000), "aaaaa");
+			ContaPoupanca c = new ContaPoupanca(random.nextInt(100000), "aaaaa"+1);
 			contas.add(c);
 			System.out.println(c);
 		} 
