@@ -39,8 +39,23 @@ public abstract class Conta {
 		return titular;
 	}
 
-	public boolean equals(Object obj) {
-		Conta outra_conta = (Conta) obj;
-		return this.numero == outra_conta.numero && this.titular == outra_conta.titular;
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + numero;
+		return result;
+	}
+
+	public boolean equals(Conta c) {
+		if (this == c)
+			return true;
+		if (c == null)
+			return false;
+		if (getClass() != c.getClass())
+			return false;
+		if (this.numero != c.numero)
+			return false;
+		return true;
 	}
 }
