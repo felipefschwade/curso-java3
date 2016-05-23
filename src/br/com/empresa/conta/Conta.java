@@ -47,15 +47,18 @@ public abstract class Conta {
 		return result;
 	}
 
-	public boolean equals(Conta c) {
-		if (this == c)
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
 			return true;
-		if (c == null)
+		if (obj == null)
 			return false;
-		if (getClass() != c.getClass())
+		if (getClass() != obj.getClass())
 			return false;
-		if (this.numero != c.numero)
+		Conta other = (Conta) obj;
+		if (numero != other.numero)
 			return false;
 		return true;
 	}
+
 }
