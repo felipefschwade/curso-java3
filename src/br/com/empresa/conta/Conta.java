@@ -35,6 +35,10 @@ public abstract class Conta {
 	public String toString() {
 		return "Objeto do tipo conta com saldo: "+this.saldo+" e número: "+this.numero;
 	}
+	public String getTitular() {
+		return titular;
+	}
+
 	public boolean equals(Object obj) {
 		Conta outra_conta = (Conta) obj;
 		return this.numero == outra_conta.numero && this.titular == outra_conta.titular;
